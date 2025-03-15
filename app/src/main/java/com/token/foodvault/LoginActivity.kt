@@ -73,6 +73,7 @@ class LoginActivity : AppCompatActivity() {
         }
         else {
             Toast.makeText(this, "Login Failed. Try again", Toast.LENGTH_LONG).show()
+            GoogleSignIn.getClient(this, GoogleSignInOptions.DEFAULT_SIGN_IN).signOut()
         }
     }
 
@@ -84,7 +85,7 @@ class LoginActivity : AppCompatActivity() {
             val credential = GoogleAuthProvider.getCredential(account.idToken, null)
             auth.signInWithCredential(credential).addOnCompleteListener {
                 if (it.isSuccessful) {
-                    Toast.makeText(this, "Success", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Logged in Successfully", Toast.LENGTH_LONG).show()
                     val intent = Intent(this, DashboardActivity::class.java)
                     startActivity(intent)
                     finish()
@@ -92,6 +93,7 @@ class LoginActivity : AppCompatActivity() {
 
                 else {
                     Toast.makeText(this, "Login Failed. Try again.", Toast.LENGTH_LONG).show()
+                    GoogleSignIn.getClient(this, GoogleSignInOptions.DEFAULT_SIGN_IN).signOut()
                 }
             }
         }

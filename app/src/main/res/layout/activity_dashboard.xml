@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="10dp"
-        android:text="⚠️ Scan the QR only when NEAR the counter.\nYour token will be displayed for 30 seconds only."
+        android:text="⚠️ Scan the QR only when NEAR the counter.\nYour token will be displayed for 15 seconds only."
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16dp"

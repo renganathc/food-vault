@@ -113,7 +113,8 @@ class DashboardActivity : AppCompatActivity() {
                                     db.collection("users").document(user_email!!)
                                         .set(data)
                                         .addOnSuccessListener {
-                                            Toast.makeText(this, "Token ", Toast.LENGTH_LONG).show()
+                                            val intent = Intent(this, TokenActivity::class.java)
+                                            startActivity(intent)
                                         }
                                         .addOnFailureListener{
                                             Toast.makeText(this, "Failed. Try again", Toast.LENGTH_LONG).show()
@@ -125,7 +126,8 @@ class DashboardActivity : AppCompatActivity() {
                                 db.collection("users").document(user_email!!)
                                     .set(data)
                                     .addOnSuccessListener {
-                                        Toast.makeText(this, "Token", Toast.LENGTH_LONG).show()
+                                        val intent = Intent(this, TokenActivity::class.java)
+                                        startActivity(intent)
                                     }
                                     .addOnFailureListener{
                                         Toast.makeText(this, "Failed. Try again", Toast.LENGTH_LONG).show()

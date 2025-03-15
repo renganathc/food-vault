@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="6dp"
                 android:paddingTop="5dp"
-                android:text="✅ Scan the QR only when you are NEAR the counter.\n\n✅  Your token will be displayed for 30 seconds only.\n\n✅ Show the token to the staff for verification.\n\n❌ DO NOT close the app immediately after scanning, or else your token will be lost.\n\n✅ If you face any issues, contact the support team."
+                android:text="✅ Scan the QR only when you are NEAR the counter.\n\n✅  Your token will be displayed for 15 seconds only.\n\n✅ Show the token to the staff for verification.\n\n❌ DO NOT close the app immediately after scanning, or else your token will be lost.\n\n✅ If you face any issues, contact the support team."
                 android:textColor="@color/black"
                 android:textSize="16dp" />
 
