@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "458557175304",
+    "project_id": "foodvault-76537",
+    "storage_bucket": "foodvault-76537.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458557175304:android:eb778c7ab28b3aff7943bd",
+        "android_client_info": {
+          "package_name": "com.token.foodvault"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458557175304-8287kuvug9gdi1frij0egk7n1r3o1o95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.token.foodvault",
+            "certificate_hash": "f4d161ce5359571f4220db4b53f10c27b9cfdcf6"
+          }
+        },
+        {
+          "client_id": "458557175304-5rqsrpn8do64sd985edvdqhgu6ghekht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6fvNSmuD6zuKWX62mCWnEdFKtzZSkRSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458557175304-5rqsrpn8do64sd985edvdqhgu6ghekht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

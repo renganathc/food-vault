@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DashboardActivity">
+
+    <!-- Welcome Back Message -->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back 👋"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        android:paddingTop="2dp" />
+
+    <!-- Food Vault Title -->
+    <TextView
+        android:id="@+id/food_vault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="FoodVault"
+        android:textColor="#FF5722"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/instructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Instructions Text -->
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="⚠️ Scan the QR only when NEAR the counter.\nYour token will be displayed for 30 seconds only."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginTop="-40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Scan Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/open_scan"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="Generate Token"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/circular_button_solid"
+        android:elevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/instructions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+
+    <!-- About Founder Button -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/help"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:text="⁉️ Help and Support"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:elevation="4dp"
+        android:background="@drawable/circular_button_bg"
+        app:layout_constraintTop_toBottomOf="@id/open_scan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
