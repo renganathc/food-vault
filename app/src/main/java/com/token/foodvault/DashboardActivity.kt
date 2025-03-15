@@ -63,6 +63,7 @@ class DashboardActivity : AppCompatActivity() {
             val scanner = IntentIntegrator(this)
             scanner.setCaptureActivity(com.journeyapps.barcodescanner.CaptureActivity::class.java)
             scanner.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
+            scanner.setBeepEnabled(false)
             scanner.initiateScan()
         }
 

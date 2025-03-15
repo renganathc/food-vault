@@ -1,5 +1,6 @@
 package com.token.foodvault
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.TextView
@@ -40,6 +41,13 @@ class TokenActivity : AppCompatActivity() {
         generated.text = dateFormat
 
         token_id.text = UUID.randomUUID().toString().substring(0, 8).uppercase()
+
+        val media_player : MediaPlayer = MediaPlayer.create(this, R.raw.token_gen)
+        media_player.start()
+
+        media_player.setOnCompletionListener {
+            it.release()
+        }
 
         startCountdown()
 
