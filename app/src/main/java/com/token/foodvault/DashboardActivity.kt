@@ -88,6 +88,10 @@ class DashboardActivity : AppCompatActivity() {
                     Toast.makeText(this, "Scan Failed. Try again", Toast.LENGTH_LONG).show()
                 }
 
+                else if (result.contents != "kamadhenu-1") {
+                    Toast.makeText(this, "Invalid Token", Toast.LENGTH_LONG).show()
+                }
+
                 else {
                     val db = FirebaseFirestore.getInstance()
                     db.firestoreSettings = FirebaseFirestoreSettings.Builder()
